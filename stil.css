@@ -1,0 +1,311 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+}
+
+/*sve*/
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: linear-gradient(-45deg, #23d5ab, #23a6d5, #e73c7e,  #ee7752);
+	background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/*prvastranica*/
+.sve{
+	position: relative;
+	margin-top: 250px;
+	width: 800px;
+	transform: skewY(-10deg);
+}
+
+.sve h1{
+	position: relative;
+	font-size: 60px;
+	color: rgba(79,47,79);
+}
+.sve .paragraf{
+	transform-origin:  top;
+	transform: skewX(45deg);
+}
+.sve .paragraf p{
+	font-size: 20px;
+	color: rgba(0,0,128);
+}
+.sve .paragraf a{
+	position: relative;
+	padding: 10px 30px;
+	display: inline-block;
+	background: rgba(0,0,128,0.1);
+	transform-origin: top;
+	margin-top: 15px;
+	border: 4px solid rgba(79,47,79);
+	transform: skew(-45deg);
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 20px;
+	color: rgba(0,0,128);
+}
+.sve .paragraf a:hover{
+	background: rgba(0,0,128);
+	color: rgba(205,201,201);
+}
+
+/*drugastranica*/
+.svee{
+	padding-left: 400px;
+	display: flex;
+	width: 700px;
+	height: 2900px;
+	margin:10px;
+	padding:10px;
+	border: 5px solid rgba(0,0,128); 
+	-webkit-animation-name: background;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;    
+    -webkit-animation-play-state: running;
+    animation-name: background;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;    
+    animation-play-state: running;
+    background-color:rgba(188,210,238);
+}
+
+@-webkit-keyframes background{
+    0%     {background-color: rgba(188,210,238);}
+    50%  {background-color:rgba(255,228,225);}
+    100%  {background-color:rgbargba(188,210,238);}
+}
+
+@keyframes background{
+    0%    {background-color: rgba(188,210,238);}
+    50%  {background-color:rgba(255,228,225);}
+    100%  {background-color:rgba(188,210,238);}
+}
+
+.svee a{
+	position: relative;
+	perspective:1000px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+	background: rgba(0,0,128,0.1);
+	border: 4px solid rgba(79,47,79);
+	border-radius:5%;
+	color: rgba(0,0,128);
+	width: 100px;
+	height: 50px;
+	padding: 10px;
+	transform:  rotateX(50deg);
+    transform-origin: 0 100%; 
+    transition: transform 0.3s ease-in-out; 
+	text-decoration:none;
+	text-transform: uppercase;
+}
+.svee a:hover{
+	background: rgba(0,0,128);
+	color: rgba(205,201,201);
+	transform: scale(1);
+}
+
+
+/*podnaslovi na drugoj stranici*/
+#prvidio {
+    position:absolute;
+	font-size:20px;
+	top:150px;
+	width: 700px;
+    height: 50px;
+    background: rgba(0,0,128,0.1);
+    color: rgba(79,47,79);
+}
+#drugidio{
+    position:absolute;
+	font-size:20px;
+	top: 450px;
+	width: 700px;
+    height: 50px;
+    background: rgba(0,0,128,0.1);
+    color: rgba(79,47,79);
+}
+#trecidio{
+    position:absolute;
+	font-size:20px;
+	top:450px;
+	width: 700px;
+    height: 80px;
+    background: rgba(0,0,128,0.1);
+    color: rgba(79,47,79);
+}
+#cetvrtidio{
+    position: absolute;
+	font-size: 20px;
+	top: 460px;
+	width: 700px;
+    height: 50px;
+    background: rgba(0,0,128,0.1);
+    color: rgba(79,47,79);
+}
+#petidio{
+    position: absolute;
+	font-size: 20px;
+	top: 450px;
+	width: 700px;
+    height: 50px;
+    background: rgba(0,0,128,0.1);
+    color: rgba(79,47,79);
+}
+#sestidio{
+    position: absolute;
+	font-size: 20px;
+	top: 450px;
+	width: 700px;
+    height: 105px;
+    background: rgba(0,0,128,0.1);
+    color: rgba(79,47,79);
+}
+.svee h2{ 
+	width: 250px;
+}
+
+	  
+/*olovka*/	  
+.slikeolovka{
+	position:relative;
+	top: 50px;
+	display: flex;
+	height: 320px;
+	gap: 16px;
+}
+.slikeolovka div{
+	flex: 1;
+	border-radius: 16px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	transition: all .s cubic-bezier (.25, .4, .45, 1.4);
+}
+.slikeolovka div:hover{
+	flex: 5;
+}
+/*boja*/
+.slikeboja{
+	position:relative;
+	top: 50px;
+	display: flex;
+	height: 320px;
+	gap: 16px;
+}
+.slikeboja div{
+	flex: 1;
+	border-radius: 16px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	transition: all .s cubic-bezier (.25, .4, .45, 1.4);
+}
+.slikeboja div:hover{
+	flex: 5;
+}
+/*rapidograf*/
+.slikerapidograf{
+	position:relative;
+	top: 40px;
+	display: flex;
+	height: 320px;
+	gap: 16px;
+}
+.slikerapidograf div{
+	flex: 1;
+	border-radius: 16px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	transition: all .s cubic-bezier (.25, .4, .45, 1.4);
+}
+.slikerapidograf div:hover{
+	flex: 5;
+}
+/*rapidograf*/
+.slikemural{
+	position:relative;
+	top: 50px;
+	display: flex;
+	height: 320px;
+	gap: 16px;
+}
+.slikemural div{
+	flex: 1;
+	border-radius: 16px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	transition: all .s cubic-bezier (.25, .4, .45, 1.4);
+}
+.slikemural div:hover{
+	flex: 5;
+}
+/*digitalno*/
+.slikedigitalno{
+	position:relative;
+	top: 50px;
+	display: flex;
+	height: 320px;
+	gap: 16px;
+}
+.slikedigitalno div{
+	flex: 1;
+	border-radius: 16px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	transition: all .s cubic-bezier (.25, .4, .45, 1.4);
+}
+.slikedigitalno div:hover{
+	flex: 5;
+}
+/*platnenetorbe*/
+.sliketorbe{
+	position:relative;
+	top: 50px;
+	display: flex;
+	height: 320px;
+	gap: 16px;
+}
+.sliketorbe div{
+	flex: 1;
+	border-radius: 16px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	transition: all .s cubic-bezier (.25, .4, .45, 1.4);
+}
+.sliketorbe div:hover{
+	flex: 5;
+}
+
+
+
+
+
+
+
+
